@@ -33,6 +33,7 @@ public class TestProductsImpl
         var name = _productsImpl.GetName(_testProduct.Id);
 
         Assert.IsTrue(_testProduct.Name.Equals(name));
+        Assert.IsTrue(_productsImpl.GetName("fakeId").Equals(string.Empty));
     }
 
     [TestMethod]
