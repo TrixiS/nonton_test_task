@@ -23,13 +23,7 @@ public class ProductsImpl
 
     public bool DeleteProduct(Product product)
     {
-        if (!this.HasProduct(product.Id))
-        {
-            return false;
-        }
-
-        this._products.Remove(product.Id);
-        return true;
+        return this._products.Remove(product.Id);
     }
 
     public string GetName(string productId)
