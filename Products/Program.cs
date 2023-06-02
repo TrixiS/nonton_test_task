@@ -1,2 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Run `dotnet test` to test ProductsImpl
 Console.WriteLine("Hello, World!");
